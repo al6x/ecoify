@@ -19,24 +19,24 @@ files (templates) in directory recursively.
 - hogan - .hg, .hogan
 - jade - .jade
 
-It's also easy to add a new one, as a sample take a look at [eco](./blob/master/eco.js),
-it's about seven lines of code.
+It's also easy to add a new one. As a sample take a look
+ at [eco](/alexeypetrushin/resourcify/blob/master/eco.js), it's about seven lines of code.
 
 ## Installation
 
 Install resourcify and template engine You want.
 
-```
+``` shell
 npm install resourcify jade
 ```
 
 Plug resourcify into browserify
 
-```
+``` shell
 browserify app.js -w -p resourcify/jade -o bundle.js
 ```
 
-```
+``` javascript
 ...
 var jade = require('resourcify/jade')
 bundle.use(jade)
