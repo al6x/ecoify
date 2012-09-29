@@ -1,6 +1,6 @@
 {
   "name": "resourcify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "browserify.require() for templates and other resources",
   "keywords": ["browserify", "view", "template", "resource"],
   "devDependencies": {
