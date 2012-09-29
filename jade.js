@@ -5,9 +5,9 @@ module.exports = function(bundle){
   bundle.prepend(content)
 
   // Compiling templates.
-  bundle.register('.jade', function(data){
+  bundle.register('.jade', function(data, fileName){
     var jade = require('jade')
-    var content = jade.compile(data, {compileDebug: false, client: true})
+    var content = jade.compile(data, {compileDebug: false, client: true, filename:fileName})
     return "module.exports = " + content + ";"
   })
 }
