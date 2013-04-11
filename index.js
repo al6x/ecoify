@@ -12,13 +12,11 @@ module.exports = function (file) {
   var through = require('through');
 
   if (!isEco(file)) return through();
-
-  var data = '';
-  return through(write, end);
-
+  var data  = '';
   var write = function (buf) { data += buf }
   var end   = function () {
     this.queue(compile(file, data));
     this.queue(null);
   }
+  return through(write, end);
 };
