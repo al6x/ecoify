@@ -1,14 +1,11 @@
 {
-  "name": "resourcify",
-  "version": "0.1.1",
-  "description": "browserify.require() for templates and other resources",
-  "keywords": ["browserify", "view", "template", "resource"],
+  "name": "ecoify",
+  "version": "1.0.0",
+  "description": "browserify v2 plugin for eco templates.",
+  "keywords": ["browserify", "eco", "template"],
   "devDependencies": {
-    "eco": "1.1.x",
-    "ejs": "0.8.x",
-    "handlebars": "1.0.x",
-    "hogan.js": "2.0.0",
-    "jade": "0.27.0"
+    "eco"      : "1.1.x",
+    "ethrough" : "2.2.0"
   },
   "author": "Alexey Petrushin"
 }

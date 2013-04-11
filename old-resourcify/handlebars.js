@@ -1,5 +1,5 @@
 // Handlebars doesn't have ready to use `runtime.js`, it requires to manually
-// generate it, so instead of bothering with this stuff we just use another 
+// generate it, so instead of bothering with this stuff we just use another
 // project that already did it - handlebars-brunch.
 module.exports = function(bundle){
   // Brunch handlebars compiler.

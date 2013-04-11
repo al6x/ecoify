@@ -10,7 +10,7 @@ module.exports = function(bundle){
   var content = require('fs').readFileSync(path, 'utf8')
   bundle.prepend(content)
 
-  // Compiling templates.  
+  // Compiling templates.
   bundle.register('.ejs', function(data){
     // There's currently no way to precompile ejs, the only possible way is to save template
     // as a string and compile it on the client.
