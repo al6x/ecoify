@@ -1,11 +1,11 @@
 {
   "name": "ecoify",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "browserify v2 plugin for eco templates.",
   "keywords": ["browserify", "eco", "template"],
-  "devDependencies": {
-    "eco"      : "1.1.x",
-    "ethrough" : "2.2.0"
+  "dependencies": {
+    "eco": "1.1.x",
+    "through": "2.3.0"
   },
   "author": "Alexey Petrushin"
 }
