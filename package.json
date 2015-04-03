@@ -4,7 +4,7 @@
   "description": "browserify v2 plugin for eco templates.",
   "keywords": ["browserify", "eco", "template"],
   "dependencies": {
-    "eco": "1.1.x",
+    "eco": "1.1.0-rc-3",
     "through": "2.3.x"
   },
   "author": "Alexey Petrushin"
