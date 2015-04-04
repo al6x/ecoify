@@ -9,7 +9,7 @@ var compile = function(file, data) {
   // It's usefull if you want to alter how template works, for example inject additional
   // variables.
   result.push("module.exports = function(variables){")
-  result.push("  if(window.app.__render) return window.app.__render(template, variables);")
+  result.push("  if(window.app && window.app.__render) return window.app.__render(template, variables);")
   result.push("  else return template(variables);")
   result.push("};")
 
